@@ -1,0 +1,19 @@
+Scapy is a powerful python library used for network packet manipulation. It allows 
+for the creation, decoding, sending, recieving and analysis of network packets
+.Scapy is widely used in networking research, penetration testing and education of its versatality and ease of use.
+****Function of scapy 
+1. Packet creation:
+	a. Construct packets for various network protocols
+	from scapy.all import IP, ICMP
+	packet = IP(dst="192.168.1.1.")/ICMP()
+	print(packet.summary()) #print packet details
+	supported protocols: IP,TCP,UDP,ICMP,DNS.ARP, etc
+2. Packet sending:
+	** send packets over the network.
+	form scapy.all import send
+	send(IP(dst="192.123.12.3")/ICMP())
+3. Packet Sniffing:
+	--- Capture live network packets
+4. Manipulate packets
+  --- what are packets: think of packets like mail sent and recieved on the internet, like small bits of data.
+
